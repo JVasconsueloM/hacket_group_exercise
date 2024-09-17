@@ -1,27 +1,41 @@
-# HacketGroupExerciseFront
+## Prerequisites
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.4.
+Ensure you have the following tools installed:
 
-## Development server
+- Node.js (v18.20.4 or higher)
+- npm (v10.7.0 or higher)
+- Angular CLI (v18.2.4 or higher)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## installation
 
-## Code scaffolding
+```bash
+npm install
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Running the Application
+
+```bash
+npm start
+```
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+The build artifacts will be stored in the `/hacket_group_exercise_back/static/` and `/hacket_group_exercise_back/templates/data_usa/` directory for execute django directly
 
-## Running unit tests
+```bash
+npm run build
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Linting
 
-## Running end-to-end tests
+To check for linting errors, use:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```bash
+npm run lint
+```
 
-## Further help
+For code formatting, Prettier is integrated. To format the codebase, run:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+```bash
+npm run prettier
+```
