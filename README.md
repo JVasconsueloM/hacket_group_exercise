@@ -36,6 +36,14 @@ The application is designed to be responsive, ensuring compatibility across diff
 
 ![Alt pc](./readme-assets/pc.png)
 
+![Alt macbook-air](./readme-assets/Macbook-Air-localhost.png)
+
+![Alt ipad-pro-11](./readme-assets/iPad-PRO-11-localhost.png)
+
+![Alt samsung-galaxy-s20](./readme-assets/Samsung-Galaxy-S20-localhost.png)
+
+![Alt iphone-13-mini](./readme-assets/iPhone-13-Mini-localhost.png)
+
 
 <br><span style="color: #1b75d0">Services</span>:
 #### Backend (Django + GraphQL)
