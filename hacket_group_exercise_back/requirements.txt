@@ -1,5 +1,0 @@
-Django==5.1.1
-graphene==3.3
-graphene-django==3.2.2
-requests==2.32.3
-django-cors-headers==4.4.0

@@ -29,13 +29,13 @@
 /hacket_group_front/.history/*
 
 # Miscellaneous
-/hacket_group_front//.angular/cache
+/hacket_group_front/.angular/cache
 /hacket_group_front/.sass-cache/
-/hacket_group_front//connect.lock
-/hacket_group_front//coverage
-/hacket_group_front//libpeerconnection.log
+/hacket_group_front/connect.lock
+/hacket_group_front/coverage
+/hacket_group_front/libpeerconnection.log
 /hacket_group_front/testem.log
-/hacket_group_front//typings
+/hacket_group_front/typings
 
 # System files
 /hacket_group_front/.DS_Store
