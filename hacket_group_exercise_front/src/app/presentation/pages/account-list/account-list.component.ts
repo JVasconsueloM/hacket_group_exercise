@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-account-list',
@@ -7,5 +7,4 @@ import {Component} from '@angular/core';
   templateUrl: './account-list.component.html',
   styleUrl: './account-list.component.scss',
 })
-export default class AccountListComponent {
-}
+export default class AccountListComponent {}

@@ -1,7 +1,7 @@
-import {Routes} from '@angular/router';
+import { Routes } from '@angular/router';
 
 export const routes: Routes = [
-  {path: '', redirectTo: 'home/dashboard', pathMatch: 'full'},
+  { path: '', redirectTo: 'home/dashboard', pathMatch: 'full' },
   {
     path: 'home',
     loadComponent: () => import('./presentation/pages/home/home.component'),
@@ -18,6 +18,6 @@ export const routes: Routes = [
         path: 'activities',
         loadComponent: () => import('./presentation/pages/activity-list/activity-list.component'),
       },
-    ]
+    ],
   },
 ];

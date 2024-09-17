@@ -1,7 +1,7 @@
-import {APOLLO_OPTIONS} from 'apollo-angular';
-import {HttpLink} from 'apollo-angular/http';
-import {InMemoryCache} from '@apollo/client/core';
-import {EnvironmentProviders, Provider} from "@angular/core";
+import { APOLLO_OPTIONS } from 'apollo-angular';
+import { HttpLink } from 'apollo-angular/http';
+import { InMemoryCache } from '@apollo/client/core';
+import { EnvironmentProviders, Provider } from '@angular/core';
 
 export function provideApolloClient(): Provider | EnvironmentProviders {
   return [

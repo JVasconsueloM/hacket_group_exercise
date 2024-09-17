@@ -1,8 +1,6 @@
 <div class="sidebar-container">
   @for (option of options; track option.name) {
-    <app-sidebar-option
-      [iconName]="option.icon" [active]="option.active" (click)="selectItem(option)"
-    >
+    <app-sidebar-option [iconName]="option.icon" [active]="option.active" (click)="selectItem(option)">
       {{ option.name }}
     </app-sidebar-option>
   }

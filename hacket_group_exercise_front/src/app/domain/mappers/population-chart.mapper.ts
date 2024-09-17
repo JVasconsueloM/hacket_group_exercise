@@ -1,6 +1,6 @@
-import {Population} from '../../core/models/population-data.model';
-import {Injectable} from '@angular/core';
-import {ChartData} from '../interfaces/chart.interface';
+import { Population } from '../../core/models/population-data.model';
+import { Injectable } from '@angular/core';
+import { ChartData } from '../interfaces/chart.interface';
 
 @Injectable({
   providedIn: 'root',

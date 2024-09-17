@@ -1,0 +1,1 @@
+import{Za as a,_a as c,ca as o,fb as s,hb as i}from"./chunk-SVFPZVI5.js";var e=class n{static \u0275fac=function(t){return new(t||n)};static \u0275cmp=o({type:n,selectors:[["app-account-list"]],standalone:!0,features:[i],decls:2,vars:0,template:function(t,l){t&1&&(a(0,"p"),s(1,"account-list works!"),c())}})};export{e as default};

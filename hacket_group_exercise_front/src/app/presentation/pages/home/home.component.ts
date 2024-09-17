@@ -1,7 +1,7 @@
-import {Component} from '@angular/core';
-import {HeaderComponent} from '../../components/header/header.component';
-import {SidebarComponent} from '../../containers/sidebar/sidebar/sidebar.component';
-import {RouterOutlet} from "@angular/router";
+import { Component } from '@angular/core';
+import { HeaderComponent } from '../../components/header/header.component';
+import { SidebarComponent } from '../../containers/sidebar/sidebar/sidebar.component';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -10,5 +10,4 @@ import {RouterOutlet} from "@angular/router";
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })
-export default class HomeComponent {
-}
+export default class HomeComponent {}

@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-activity-list',
@@ -7,5 +7,4 @@ import {Component} from '@angular/core';
   templateUrl: './activity-list.component.html',
   styleUrl: './activity-list.component.scss',
 })
-export default class ActivityListComponent {
-}
+export default class ActivityListComponent {}
