@@ -8,9 +8,9 @@
 
 ### setup
 
-Execute the pre-dockerfile-run.sh script to start the frontend and move the build files to the Django project:
+Execute the pre-dockerfile-run.sh script to build the frontend and move the build files to the Django project:
 
-```bash
+```ssh
 ./pre-dockerfile-run.sh
 ```
 
@@ -26,6 +26,7 @@ Start the container locally with the following command:
 docker run -p 8000:8000 -t hacket-exercise
 ```
 
+## Documentation
 
 #### Objective
 
@@ -33,15 +34,15 @@ docker run -p 8000:8000 -t hacket-exercise
 The goal of this exercise is to build a full-stack application with an Angular frontend and a Django backend, integrating with the DataUSA API. The application visualizes two charts: a multi-axis line chart displaying population data and a pie chart displaying vehicle ownership data. The backend should expose a GraphQL API with two resolvers and serve the frontend's static distribution files.
 </span>
 
-## Approach
+### Approach
 
 This project follows a modular structure, ensuring separation of concerns between the frontend and backend. The frontend is implemented using Angular and serves two components representing two distinct charts. The backend is implemented in Django and acts as a GraphQL intermediary, connecting to the DataUSA API and serving population and vehicle ownership data.
 
 The application is developed with scalability and maintainability in mind, ensuring that any future modifications to the data sources or frontend can be easily implemented.
 
-## Implementation Details
+### Implementation Details
 
-### Frontend (Angular)
+#### Frontend (Angular)
 
 <br><span style="color: #1b75d0">Arquitecture</span>: Clean arquitecture
 <br><span style="color: #1b75d0">Framework</span>: Angular 18 (using standalone APIs, without AppModule and signals).
