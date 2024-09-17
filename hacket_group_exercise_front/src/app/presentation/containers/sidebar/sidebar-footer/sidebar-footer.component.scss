@@ -1,0 +1,22 @@
+:host {
+  .profile {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 6px;
+    margin-bottom: 32px;
+
+    .account {
+      display: flex;
+      flex-direction: column;
+      .name {
+        font-size: 13px;
+        font-weight: 600;
+      }
+      .position {
+        font-size: 11px;
+        color: hsl(var(--color-secondary));
+      }
+    }
+  }
+}

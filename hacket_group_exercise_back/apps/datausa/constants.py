@@ -1,0 +1,1 @@
+POPULATION_URL = "https://datausa.io/api/data"

@@ -1,0 +1,19 @@
+@import "color";
+@import "font";
+
+:root {
+  --border-radius: 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  line-height: 1.5;
+  color: hsl(var(--color-primary));
+  background-color: hsl(var(--color-background));
+}

@@ -1,0 +1,4 @@
+<button (click)="clickHandler($event)" [class.active]="active()">
+  <app-svg-icon [name]="iconName()"></app-svg-icon>
+  <ng-content></ng-content>
+</button>

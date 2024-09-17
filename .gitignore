@@ -1,45 +1,45 @@
 # See https://docs.github.com/get-started/getting-started-with-git/ignoring-files for more about ignoring files.
 
 # Compiled output
-hacket_group_front/dist
-hacket_group_front/tmp
-hacket_group_front/out-tsc
-hacket_group_front/bazel-out
+hacket_group_exercise_front/dist/
+hacket_group_exercise_front/tmp/
+hacket_group_exercise_front/out-tsc/
+hacket_group_exercise_front/bazel-out/
 
 # Node
-hacket_group_front/node_modules
-hacket_group_front/npm-debug.log
-hacket_group_front/yarn-error.log
+hacket_group_exercise_front/node_modules/
+hacket_group_exercise_front/npm-debug.log
+hacket_group_exercise_front/yarn-error.log
 
 # IDEs and editors
-hacket_group_front/.idea/
-hacket_group_front/.project
-hacket_group_front/.classpath
-hacket_group_front/.c9/
-hacket_group_front/*.launch
-hacket_group_front/.settings/
-hacket_group_front/*.sublime-workspace
+hacket_group_exercise_front/.idea/
+hacket_group_exercise_front/.project/
+hacket_group_exercise_front/.classpath/
+hacket_group_exercise_front/.c9/
+hacket_group_exercise_front/*.launch
+hacket_group_exercise_front/.settings/
+hacket_group_exercise_front/*.sublime-workspace
 
 # Visual Studio Code
-hacket_group_front/.vscode/*
-hacket_group_front/!.vscode/settings.json
-hacket_group_front/!.vscode/tasks.json
-hacket_group_front/!.vscode/launch.json
-hacket_group_front/!.vscode/extensions.json
-hacket_group_front/.history/*
+hacket_group_exercise_front/.vscode/*
+hacket_group_exercise_front/!.vscode/settings.json
+hacket_group_exercise_front/!.vscode/tasks.json
+hacket_group_exercise_front/!.vscode/launch.json
+hacket_group_exercise_front/!.vscode/extensions.json
+hacket_group_exercise_front/.history/*
 
 # Miscellaneous
-hacket_group_front/.angular/cache
-hacket_group_front/.sass-cache/
-hacket_group_front/connect.lock
-hacket_group_front/coverage
-hacket_group_front/libpeerconnection.log
-hacket_group_front/testem.log
-hacket_group_front/typings
+hacket_group_exercise_front/.angular/cache/
+hacket_group_exercise_front/.sass-cache/
+hacket_group_exercise_front/connect.lock
+hacket_group_exercise_front/coverage/
+hacket_group_exercise_front/libpeerconnection.log
+hacket_group_exercise_front/testem.log
+hacket_group_exercise_front/typings/
 
 # System files
-hacket_group_front/.DS_Store
-hacket_group_front/Thumbs.db
+hacket_group_exercise_front/.DS_Store
+hacket_group_exercise_front/Thumbs.db
 
-hacket_group_back/.venv/
-hacket_group_back/.idea
+hacket_group_exercise_back/.venv
+hacket_group_exercise_back/.idea/
