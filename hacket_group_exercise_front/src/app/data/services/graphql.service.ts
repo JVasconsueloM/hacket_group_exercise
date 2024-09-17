@@ -1,22 +1,19 @@
-import {Injectable} from '@angular/core';
-import {Apollo} from "apollo-angular";
-import {lastValueFrom} from "rxjs";
-import {ApolloQueryResult, TypedDocumentNode} from "@apollo/client";
+import { Injectable } from '@angular/core';
+import { Apollo } from 'apollo-angular';
+import { lastValueFrom } from 'rxjs';
+import { ApolloQueryResult, TypedDocumentNode } from '@apollo/client';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class GraphqlService {
-
-  constructor(
-    private apollo: Apollo
-  ) {
-  }
+  constructor(private apollo: Apollo) {}
 
   executeQuery<T>(query: TypedDocumentNode<unknown, unknown>): Promise<T> {
-    return lastValueFrom(this.apollo
-      .query({
+    return lastValueFrom(
+      this.apollo.query({
         query: query,
-      })).then((response: ApolloQueryResult<unknown>) => response.data) as Promise<T>
+      })
+    ).then((response: ApolloQueryResult<unknown>) => response.data) as Promise<T>;
   }
 }

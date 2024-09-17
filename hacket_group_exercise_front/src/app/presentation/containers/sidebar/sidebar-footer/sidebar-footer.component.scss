@@ -9,14 +9,29 @@
     .account {
       display: flex;
       flex-direction: column;
+
       .name {
         font-size: 13px;
         font-weight: 600;
       }
+
       .position {
         font-size: 11px;
         color: hsl(var(--color-secondary));
       }
+    }
+  }
+}
+
+@media (min-width: 601px) and (max-width: 850px) {
+  :host {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 24px;
+
+    .profile {
+      width: initial;
+      margin-bottom: initial;
     }
   }
 }

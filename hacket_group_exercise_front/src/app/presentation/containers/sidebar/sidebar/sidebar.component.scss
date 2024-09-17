@@ -28,8 +28,31 @@
     background: hsl(var(--color-background-contrast));
     box-shadow: 0px 3px 5px 0px hsla(var(--color-shadow), 0.2);
     border-radius: var(--border-radius);
-    display: flex;
-    flex-direction: row;
-    gap: 75px;
+  }
+}
+
+@media (max-width: 850px) {
+  :host {
+    flex-direction: column;
+    width: 100%;
+
+    .sidebar-container {
+      height: initial;
+      width: inherit;
+      flex-direction: row;
+    }
+
+    app-sidebar-footer {
+      margin-top: inherit;
+      margin-left: auto;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  :host {
+    app-sidebar-footer {
+      display: none;
+    }
   }
 }

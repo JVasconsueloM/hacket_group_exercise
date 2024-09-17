@@ -8,7 +8,9 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "postbuild:update-index": "node scripts/update-index-html.js",
-    "postbuild:move-files": "node scripts/move-build-files.js"
+    "postbuild:move-files": "node scripts/move-build-files.js",
+    "lint": "ng lint",
+    "prettier": "npx prettier --write ."
   },
   "private": true,
   "dependencies": {
@@ -35,12 +37,19 @@
     "@angular/compiler-cli": "18.2.4",
     "@ngx-env/builder": "^18.0.1",
     "@types/jasmine": "5.1.4",
+    "angular-eslint": "18.3.1",
+    "eslint": "^9.9.1",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
     "jasmine-core": "5.2.0",
     "karma": "6.4.4",
     "karma-chrome-launcher": "3.2.0",
     "karma-coverage": "2.2.1",
     "karma-jasmine": "5.1.0",
     "karma-jasmine-html-reporter": "2.1.0",
-    "typescript": "5.5.4"
+    "prettier": "^3.3.3",
+    "prettier-eslint": "^16.3.0",
+    "typescript": "5.5.4",
+    "typescript-eslint": "8.2.0"
   }
 }

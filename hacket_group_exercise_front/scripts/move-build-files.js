@@ -6,12 +6,12 @@ const staticDir = path.join(__dirname, '..', '..', 'hacket_group_exercise_back',
 const templatesDir = path.join(__dirname, '..', '..', 'hacket_group_exercise_back', 'templates', 'data_usa');
 
 if (fs.existsSync(staticDir)) {
-  fs.rmSync(staticDir, { recursive: true })
+  fs.rmSync(staticDir, { recursive: true });
 }
 fs.mkdirSync(staticDir, { recursive: true });
 
 if (fs.existsSync(templatesDir)) {
-  fs.rmSync(templatesDir, { recursive: true })
+  fs.rmSync(templatesDir, { recursive: true });
 }
 fs.mkdirSync(templatesDir, { recursive: true });
 

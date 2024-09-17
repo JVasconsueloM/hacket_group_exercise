@@ -1,22 +1,27 @@
-import {VehicleOwnership} from "../../core/models/vehicle-ownership.model";
-import {ChartData} from "../interfaces/chart.interface";
+import { VehicleOwnership } from '../../core/models/vehicle-ownership.model';
+import { Injectable } from '@angular/core';
+import { ChartData } from '../interfaces/chart.interface';
 
-export const vehicleOwnershipChartMapper = (data: VehicleOwnership[]): ChartData => {
-  const datasetLabels: string[] = [];
-  const datasets: number[] = [];
-  data.forEach(vehicleOwnership => {
-    datasetLabels.push(
-      vehicleOwnership.vehiclesAvailable
-    );
-    datasets.push(
-      vehicleOwnership.percentage
-    )
-  });
+@Injectable({
+  providedIn: 'root',
+})
+export class VehicleOwnershipChartMapper {
+  toChartData(data: VehicleOwnership[]): ChartData {
+    const datasetLabels: string[] = [];
+    const datasets: number[] = [];
 
-  return {
-    datasets: [{
-      data: datasets
-    }],
-    labels: datasetLabels,
-  };
+    data.forEach(vehicleOwnership => {
+      datasetLabels.push(vehicleOwnership.vehiclesAvailable);
+      datasets.push(vehicleOwnership.percentage);
+    });
+
+    return {
+      datasets: [
+        {
+          data: datasets,
+        },
+      ],
+      labels: datasetLabels,
+    };
+  }
 }

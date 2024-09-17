@@ -1,14 +1,12 @@
-import {Component, input, model, output} from '@angular/core';
-import {SvgIconComponent} from "../../../components/svg-icon/svg-icon.component";
+import { Component, input, output } from '@angular/core';
+import { SvgIconComponent } from '../../../components/svg-icon/svg-icon.component';
 
 @Component({
   selector: 'app-sidebar-option',
   standalone: true,
-  imports: [
-    SvgIconComponent
-  ],
+  imports: [SvgIconComponent],
   templateUrl: './sidebar-option.component.html',
-  styleUrl: './sidebar-option.component.scss'
+  styleUrl: './sidebar-option.component.scss',
 })
 export class SidebarOptionComponent {
   iconName = input.required<string>();

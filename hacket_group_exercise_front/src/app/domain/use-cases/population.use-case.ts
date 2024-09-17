@@ -1,15 +1,17 @@
-import {DataUsaRepository} from "../../data/repositories/data-usa.repository";
-import {ChartData} from "../interfaces/chart.interface";
-import {Population} from "../../core/models/population-data.model";
-import {populationChartMapper} from "../mappers/population-chart.mapper";
-import {Injectable} from "@angular/core";
+import { DataUsaRepository } from '../../data/repositories/data-usa.repository';
+import { ChartData } from '../interfaces/chart.interface';
+import { Population } from '../../core/models/population-data.model';
+import { PopulationChartMapper } from '../mappers/population-chart.mapper';
+import { Injectable } from '@angular/core';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class PopulationUseCase {
-  constructor(private repository: DataUsaRepository) {
-  }
+  constructor(
+    private repository: DataUsaRepository,
+    private mapper: PopulationChartMapper
+  ) {}
 
   async fetchPopulationData(): Promise<ChartData> {
     const data = await this.repository.fetchPopulationData();
@@ -17,6 +19,6 @@ export class PopulationUseCase {
   }
 
   private transformData(data: Population[]): ChartData {
-    return populationChartMapper(data)
+    return this.mapper.toChartData(data);
   }
 }

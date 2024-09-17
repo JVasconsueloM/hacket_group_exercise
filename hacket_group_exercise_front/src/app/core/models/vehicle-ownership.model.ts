@@ -1,5 +1,5 @@
 export interface VehicleOwnershipResponse {
-  vehicleOwnership: VehicleOwnership[]
+  vehicleOwnership: VehicleOwnership[];
 }
 
 export interface VehicleOwnership {

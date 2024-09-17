@@ -8,9 +8,8 @@ describe('MultiAxiLineChartComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [PopulationChartComponent]
-    })
-    .compileComponents();
+      imports: [PopulationChartComponent],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(PopulationChartComponent);
     component = fixture.componentInstance;

@@ -8,15 +8,14 @@ fs.readFile(indexPath, 'utf8', (err, data) => {
     return;
   }
 
-  const updatedData = data
-    .replace(/(href|src)="(?!https:\/\/|\/static\/)([^"]+)"/g, (match, p1, p2) => {
-      // Avoid modifying <base href="/">
-      if (p2 === '/') return match; // If the path is empty, don't modify
+  const updatedData = data.replace(/(href|src)="(?!https:\/\/|\/static\/)([^"]+)"/g, (match, p1, p2) => {
+    // Avoid modifying <base href="/">
+    if (p2 === '/') return match; // If the path is empty, don't modify
 
-      return `${p1}="/static/${p2}"`;
-    });
+    return `${p1}="/static/${p2}"`;
+  });
 
-  fs.writeFile(indexPath, updatedData, 'utf8', (err) => {
+  fs.writeFile(indexPath, updatedData, 'utf8', err => {
     if (err) {
       console.error('Error writing index.html:', err);
     } else {

@@ -1,5 +1,5 @@
 export interface PopulationResponse {
-  population: Population[]
+  population: Population[];
 }
 
 export interface Population {

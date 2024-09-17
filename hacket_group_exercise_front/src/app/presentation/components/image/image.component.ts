@@ -1,17 +1,17 @@
-import {Component, computed, input, isDevMode} from '@angular/core';
+import { Component, computed, input, isDevMode } from '@angular/core';
 
 @Component({
   selector: 'app-image',
   standalone: true,
   imports: [],
   templateUrl: './image.component.html',
-  styleUrl: './image.component.scss'
+  styleUrl: './image.component.scss',
 })
 export class imageComponent {
   extension = input('png');
   name = input.required<string>();
   src = computed(() => {
-    let prefix = isDevMode() ? '' : 'static';
-    return `${prefix}/assets/images/${this.name()}.${this.extension()}`
-  })
+    const prefix = isDevMode() ? '' : 'static';
+    return `${prefix}/assets/images/${this.name()}.${this.extension()}`;
+  });
 }
