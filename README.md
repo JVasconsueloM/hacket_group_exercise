@@ -1,5 +1,32 @@
 # THE HACKETT GROUP - FULLSTACK APP
 
+## Instruction to run docker
+
+### Prerequisites
+
+- Ensure Docker version 27.1.1 or higher is installed on your system.
+
+### setup
+
+Execute the pre-dockerfile-run.sh script to start the frontend and move the build files to the Django project:
+
+```bash
+./pre-dockerfile-run.sh
+```
+
+Create the Docker image using the following command:
+
+```bash
+docker build -t hacket-exercise .
+```
+
+Start the container locally with the following command:
+
+```bash
+docker run -p 8000:8000 -t hacket-exercise
+```
+
+
 #### Objective
 
 <span style="color:gray;">
@@ -34,14 +61,19 @@ The application is developed with scalability and maintainability in mind, ensur
 <br><span style="color: #1b75d0">Responsiveness</span>:
 The application is designed to be responsive, ensuring compatibility across different devices and screen sizes. It uses the Open Sans font as specified in the graphic template.
 
+#### PC 2K
 ![Alt pc](./readme-assets/pc.png)
 
+#### Macbook Air
 ![Alt macbook-air](./readme-assets/Macbook-Air-localhost.png)
 
+#### Ipad Pro 11
 ![Alt ipad-pro-11](./readme-assets/iPad-PRO-11-localhost.png)
 
+#### Samsung Galaxy S20
 ![Alt samsung-galaxy-s20](./readme-assets/Samsung-Galaxy-S20-localhost.png)
 
+#### Iphone 13 mini
 ![Alt iphone-13-mini](./readme-assets/iPhone-13-Mini-localhost.png)
 
 
@@ -53,3 +85,5 @@ The application is designed to be responsive, ensuring compatibility across diff
 - Vehicle Ownership Resolver: Retrieves vehicle ownership data for US households in 2021.
 
 <br><span style="color: #1b75d0">Static File Serving</span>: The Angular build output is served via Django at "/" endpoint, allowing the frontend to be accessible from the same server and is configured to support angular routing.
+
+
